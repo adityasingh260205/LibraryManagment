@@ -23,11 +23,6 @@ router.get('/search', async (req, res, next) => {
 
 // 2. ADD A NEW BOOK
 // POST /books
-router.get('/', async (req, res, next) => {
-    // Note: To satisfy "GET /books Get all book records", this must be a GET method. 
-    // Wait, let's fix the order.
-});
-
 router.post('/', async (req, res, next) => {
     try {
         const newBook = new Book(req.body);
